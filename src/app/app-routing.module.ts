@@ -18,7 +18,15 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },  {
+    path: 'pencarian',
+    loadChildren: () => import('./pencarian/pencarian.module').then( m => m.PencarianPageModule)
+  },
+  {
+    path: 'daftar',
+    loadChildren: () => import('./daftar/daftar.module').then( m => m.DaftarPageModule)
   }
+
 ];
 
 @NgModule({

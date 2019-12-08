@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="danger" style="text-align: center;">
+    <ion-buttons style="float: inline-start;">
+      <ion-button>
+        <ion-icon name="arrow-back" style="padding-left: 20px; font-size: 120%;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-label style="font-size: 120%; padding-top: 5px;">Pencarian</ion-label>
+    <ion-buttons style="float: inline-end;">
+      <ion-button>
+        <ion-icon name="cart" style="font-size: 130%; padding-right: 200px;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar color="danger">
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="Pencarian"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>

@@ -1,9 +1,106 @@
 <ion-header>
-  <ion-toolbar color="danger">
-    <ion-title>Harga</ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-toolbar color="danger" style="text-align: center;">
+      <ion-buttons style="float: inline-start;">
+        <ion-button>
+          <ion-icon name="arrow-back" style="padding-left: 10px; font-size: 120%;"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+    <ion-toolbar color="danger">
+      <ion-searchbar (ionInput)="getItems($event)" placeholder="Pencarian"></ion-searchbar>
+    </ion-toolbar>
+
+        <ion-segment [(ngModel)]="pet">
+          <ion-segment-button value="Lokasi">
+            Lokasi
+          </ion-segment-button>
+          <ion-segment-button value="Terlaris">
+            Terlaris
+          </ion-segment-button>
+          <ion-segment-button value="Harga">
+              Harga
+            </ion-segment-button>
+        </ion-segment>
+  </ion-header>
 
 <ion-content>
+ 
+  <ion-list>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/mieburger.jpg" >
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Mie Burger</h2>
+          <p>Rp. 5000</p>
+          </ion-label>
+        <ion-button clear item-end>View</ion-button>
+      </ion-item>
+    </ion-list>
+
+  <ion-list>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/burgermini.jpg">
+          </ion-thumbnail>
+          <ion-label>
+              <h2>Burger Mini</h2>
+              <p>Rp. 5000</p>
+              </ion-label>
+            <ion-button clear item-end>View</ion-button>
+        </ion-item>
+      </ion-list>
+
+  <ion-list>
+        <ion-item>
+          <ion-thumbnail item-start>
+              <img src="assets/burgerpancong.jpg">
+            </ion-thumbnail>
+            <ion-label>
+                <h2>Burger Pancong</h2>
+                <p>Rp. 7000</p>
+                </ion-label>
+              <ion-button clear item-end>View</ion-button>
+          </ion-item>
+        </ion-list>
+
+        <ion-list>
+            <ion-item>
+              <ion-thumbnail item-start>
+                  <img src="assets/burgerkampoeng.jpg">
+                </ion-thumbnail>
+                <ion-label>
+                    <h2>Burger Kampoeng</h2>
+                    <p>Rp. 10000</p>
+                    </ion-label>
+                  <ion-button clear item-end>View</ion-button>
+              </ion-item>
+            </ion-list>
+
+            <ion-list>
+                <ion-item>
+                  <ion-thumbnail item-start>
+                      <img src="assets/burgerenak.jpg">
+                    </ion-thumbnail>
+                    <ion-label>
+                        <h2>Burger Madu</h2>
+                        <p>Rp. 38000</p>
+                        </ion-label>
+                      <ion-button clear item-end>View</ion-button>
+                  </ion-item>
+                </ion-list>
+
+                <ion-list>
+                    <ion-item>
+                      <ion-thumbnail item-start>
+                          <img src="assets/burgerkentang.jpg">
+                        </ion-thumbnail>
+                        <ion-label>
+                            <h2>Burger Kentang</h2>
+                            <p>Rp. 36000</p>
+                            </ion-label>
+                          <ion-button clear item-end>View</ion-button>
+                      </ion-item>
+                    </ion-list>
 
 </ion-content>

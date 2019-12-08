@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'daftar',
     loadChildren: () => import('./daftar/daftar.module').then( m => m.DaftarPageModule)
+  },
+  {
+    path: 'beranda',
+    loadChildren: () => import('./page/beranda/beranda.module').then( m => m.BerandaPageModule)
   }
 ];
 

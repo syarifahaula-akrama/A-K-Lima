@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar color="danger" style="text-align: center;">
+    <ion-buttons style="float: inline-start;">
+      <ion-button>
+        <ion-icon name="arrow-back" style="padding-left: 10px; font-size: 120%;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar color="danger">
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="Pencarian"></ion-searchbar>
+  </ion-toolbar>
+
+      <ion-segment [(ngModel)]="List">
+        <ion-segment-button value="Lokasi">
+          Lokasi
+        </ion-segment-button>
+        <ion-segment-button value="Terlaris">
+          Terlaris
+        </ion-segment-button>
+        <ion-segment-button value="Harga">
+            Harga
+          </ion-segment-button>
+      </ion-segment>
+</ion-header>
+
+<ion-content>
+
+<br>
+<br>
+    <div style="text-align: center;">
+        <ion-button color="dark">Darussalam</ion-button>
+        </div>
+
+<br>
+    <div style="text-align: center;">
+        <ion-button color="dark">Lamreung</ion-button>
+        </div>
+
+<br>       
+    <div style="text-align: center;">
+        <ion-button color="dark">Lamgugob</ion-button>
+        </div>
+        
+<br>
+    <div style="text-align: center;">
+        <ion-button color="dark">Blang Padang</ion-button>
+        </div>
+
+<br>
+<br>
+    <div style="text-align: center;">
+        <ion-button color="success">Lihat Lebih Banyak</ion-button>
+        </div>
+</ion-content>

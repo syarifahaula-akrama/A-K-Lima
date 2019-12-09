@@ -1,0 +1,140 @@
+<ion-header>
+    <ion-toolbar color="danger" style="text-align: center;">
+      <ion-buttons style="float: inline-start;">
+        <ion-button>
+          <ion-icon name="arrow-back" style="padding-left: 10px; font-size: 120%;"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+    <ion-toolbar color="danger">
+      <ion-searchbar (ionInput)="getItems($event)" placeholder="Pencarian"></ion-searchbar>
+    </ion-toolbar>
+
+        <ion-segment [(ngModel)]="List">
+          <ion-segment-button value="Lokasi">
+            Lokasi
+          </ion-segment-button>
+          <ion-segment-button value="Terlaris">
+            Terlaris
+          </ion-segment-button>
+          <ion-segment-button value="Harga">
+              Harga
+            </ion-segment-button>
+        </ion-segment>
+  </ion-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="assets/burger.jpg" >
+          </ion-avatar>
+          <ion-label style="padding-left: 10px;">
+            <h2>Abi Burger</h2>
+            <p><ion-button clear item-end>Buka</ion-button></p>
+            </ion-label>
+            <div style="font-size: 15px;">
+                <ion-icon name="pin"></ion-icon>
+                <ion-label style="float: right;">Darussalam</ion-label>
+            </div>   
+        </ion-item>
+      </ion-list>
+
+      <ion-list>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/kebab.jpg" >
+            </ion-avatar>
+            <ion-label style="padding-left: 10px;">
+              <h2>Kebab Ali</h2>
+              <p><ion-button clear item-end>Buka</ion-button></p>
+              </ion-label>
+              <div style="font-size: 15px;">
+                  <ion-icon name="pin"></ion-icon>
+                  <ion-label style="float: right;">Darussalam</ion-label>
+              </div>   
+          </ion-item>
+        </ion-list>
+
+        <ion-list>
+            <ion-item>
+              <ion-avatar item-start>
+                <img src="assets/soto.jpeg" >
+              </ion-avatar>
+              <ion-label style="padding-left: 10px;">
+                <h2>Soto Lamongan</h2>
+                <p><ion-button clear item-end>Buka</ion-button></p>
+                </ion-label>
+                <div style="font-size: 15px;">
+                    <ion-icon name="pin"></ion-icon>
+                    <ion-label style="float: right;">Darussalam</ion-label>
+                </div>   
+            </ion-item>
+          </ion-list>
+
+          <ion-list>
+              <ion-item>
+                <ion-avatar item-start>
+                  <img src="assets/thaitea.jpg" >
+                </ion-avatar>
+                <ion-label style="padding-left: 10px;">
+                  <h2>Piko Thaitea </h2>
+                  <p><ion-button clear item-end>Buka</ion-button></p>
+                  </ion-label>
+                  <div style="font-size: 15px;">
+                      <ion-icon name="pin"></ion-icon>
+                      <ion-label style="float: right;">Darussalam</ion-label>
+                  </div>   
+              </ion-item>
+            </ion-list>
+
+          <ion-list>
+              <ion-item>
+                <ion-avatar item-start>
+                  <img src="assets/sate.jpg" >
+                </ion-avatar>
+                <ion-label style="padding-left: 10px;">
+                  <h2>Sate Padang </h2>
+                  <p><ion-button clear item-end>Buka</ion-button></p>
+                  </ion-label>
+                  <div style="font-size: 15px;">
+                      <ion-icon name="pin"></ion-icon>
+                      <ion-label style="float: right;">Darussalam</ion-label>
+                  </div>   
+              </ion-item>
+            </ion-list>
+
+            <ion-list>
+                <ion-item>
+                  <ion-avatar item-start>
+                    <img src="assets/burgerkomplit.gif" >
+                  </ion-avatar>
+                  <ion-label style="padding-left: 10px;">
+                    <h2>Burger Budi </h2>
+                    <p><ion-button clear item-end>Buka</ion-button></p>
+                    </ion-label>
+                    <div style="font-size: 15px;">
+                        <ion-icon name="pin"></ion-icon>
+                        <ion-label style="float: right;">Darussalam</ion-label>
+                    </div>   
+                </ion-item>
+              </ion-list>
+
+              <ion-list>
+                  <ion-item>
+                    <ion-avatar item-start>
+                      <img src="assets/rotibakar.jpg" >
+                    </ion-avatar>
+                    <ion-label style="padding-left: 10px;">
+                      <h2>Roti Bakar Bandung </h2>
+                      <p><ion-button clear item-end>Buka</ion-button></p>
+                      </ion-label>
+                      <div style="font-size: 15px;">
+                          <ion-icon name="pin"></ion-icon>
+                          <ion-label style="float: right;">Darussalam</ion-label>
+                      </div>   
+                  </ion-item>
+                </ion-list>
+
+  <ion-content>

@@ -21,6 +21,14 @@ const routes: Routes = [
   },  {
     path: 'harga',
     loadChildren: () => import('./harga/harga.module').then( m => m.HargaPageModule)
+  },
+  {
+    path: 'lokasi',
+    loadChildren: () => import('./lokasi/lokasi.module').then( m => m.LokasiPageModule)
+  },
+  {
+    path: 'darussalam',
+    loadChildren: () => import('./darussalam/darussalam.module').then( m => m.DarussalamPageModule)
   }
 
 ];

@@ -23,15 +23,16 @@ const routes: Routes = [
     loadChildren: () => import('./pencarian/pencarian.module').then( m => m.PencarianPageModule)
   },
   {
-<<<<<<< HEAD
-=======
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
->>>>>>> master
     path: 'daftar',
     loadChildren: () => import('./daftar/daftar.module').then( m => m.DaftarPageModule)
+  },
+  {
+    path: 'metode',
+    loadChildren: () => import('./metode/metode.module').then( m => m.MetodePageModule)
   }
 
 ];

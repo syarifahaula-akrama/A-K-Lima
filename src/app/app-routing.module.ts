@@ -34,6 +34,8 @@ const routes: Routes = [
   {
     path: 'abiburger',
     loadChildren: () => import('./abiburger/abiburger.module').then( m => m.AbiburgerPageModule)
+    path: 'daftar',
+    loadChildren: () => import('./daftar/daftar.module').then( m => m.DaftarPageModule)
   }
 
 ];

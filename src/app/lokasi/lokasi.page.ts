@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-lokasi',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LokasiPage implements OnInit {
 
-  constructor() { }
+  constructor(public navCtrl: NavController) { }
 
   ngOnInit() {
   }
 
+  darussalam() {
+    this.navCtrl.navigateRoot('/darussalam');
+    
+  }
+  harga(){
+    this.navCtrl.navigateRoot('/harga');
+  }
 }

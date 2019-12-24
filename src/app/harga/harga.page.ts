@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-harga',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HargaPage implements OnInit {
 
-  constructor() { }
+  constructor(public navCtrl: NavController) { }
 
   ngOnInit() {
   }
 
+  harga(){
+    this.navCtrl.navigateRoot('/harga');
+  }
+  lokasi(){
+    this.navCtrl.navigateRoot('/lokasi');
+  }
 }

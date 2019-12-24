@@ -11,13 +11,11 @@
     </ion-toolbar>
 
         <ion-segment [(ngModel)]="List">
-          <ion-segment-button value="Lokasi">
-            Lokasi
-          </ion-segment-button>
+          
           <ion-segment-button value="Terlaris">
             Terlaris
           </ion-segment-button>
-          <ion-segment-button value="Harga">
+          <ion-segment-button (click)="harga()" value="Harga">
               Harga
             </ion-segment-button>
         </ion-segment>

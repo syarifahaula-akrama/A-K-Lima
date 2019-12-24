@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'lokasi',
     pathMatch: 'full'
   },
   {
@@ -18,7 +18,8 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },  {
+  },
+  {
     path: 'harga',
     loadChildren: () => import('./harga/harga.module').then( m => m.HargaPageModule)
   },
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'darussalam',
     loadChildren: () => import('./darussalam/darussalam.module').then( m => m.DarussalamPageModule)
+  },
+  {
+    path: 'abiburger',
+    loadChildren: () => import('./abiburger/abiburger.module').then( m => m.AbiburgerPageModule)
   }
 
 ];

@@ -21,7 +21,15 @@ const routes: Routes = [
   },
   {
     path: 'daftar',
-    loadChildren: () => import('./daftar/daftar.module').then( m => m.DaftarPageModule)
+    loadChildren: () => import('./page/daftar/daftar.module').then( m => m.DaftarPageModule)
+  },
+  {
+    path: 'beranda',
+    loadChildren: () => import('./page/beranda/beranda.module').then( m => m.BerandaPageModule)
+  },
+  {
+    path: 'makanan',
+    loadChildren: () => import('./page/makanan/makanan.module').then( m => m.MakananPageModule)
   }
 ];
 

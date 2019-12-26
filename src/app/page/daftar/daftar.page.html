@@ -1,0 +1,147 @@
+<ion-header>
+  <ion-toolbar color="danger" style="text-align: center;">
+    <ion-buttons style="float: inline-start;">
+      <ion-button>
+        <ion-icon name="arrow-back" style="padding-left: 20px; font-size: 120%;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-label style="font-size: 120%; padding-top: 5px;">Makanan</ion-label>
+    <ion-buttons style="float: inline-end;">
+      <ion-button>
+        <ion-icon name="camera"> style="font-size: 130%; padding-right: 20px;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar color="danger">
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="Pencarian"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item-divider sticky>
+    <ion-label>K-LIMA deals</ion-label>
+  </ion-item-divider>
+
+  <ion-slides pager>
+    <ion-slide>
+      <ion-card color="light">
+        <img src="/assets/brnd1.jpg" alt="" height="150" width="140;"/>
+      </ion-card>
+    </ion-slide>
+    
+    <ion-slide>
+      <ion-card color="light">
+        <img src="/assets/brnd2.jpg" alt="" height="150" width="140" style="background: rgb(200, 141, 0);"/>
+      </ion-card>
+    </ion-slide>
+  
+    <ion-slide>
+      <ion-card color="light">
+        <img src="/assets/brnd3.jpg" alt="" style="background: rgb(200, 141, 0);"/>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-item-divider sticky>
+    <ion-label>Kategori</ion-label>
+  </ion-item-divider>
+
+  <ion-list lines="none">
+    <ion-item>
+      <div class="scroll-container">
+        <div class="grid">
+          <img src="/assets/kat1.png" alt="" height="50" width="50"/>
+          <ion-label style="padding-top: 10px;"><p>Menu Sehat</p></ion-label>
+        </div>
+        <div class="grid">
+          <img src="/assets/kat2.png" alt="" height="50" width="50"/>
+          <ion-label style="padding-top: 10px;"><p>24 Jam</p></ion-label>
+        </div>
+        <div class="grid">
+          <img src="/assets/kat3.png" alt="" height="50" width="50"/>
+          <ion-label style="padding-top: 10px;"><p>Menu Baru</p></ion-label>
+        </div>
+        <div class="grid">
+          <img src="/assets/kat4.png" alt="" height="50" width="50"/>
+          <ion-label style="padding-top: 10px;"><p>Terdekat</p></ion-label>
+        </div>
+        <div class="grid">
+          <img src="/assets/kat5.png" alt="" height="50" width="50"/>
+          <ion-label style="padding-top: 10px;"><p>Terhits</p></ion-label>
+        </div>
+        <div class="grid">
+          <img src="/assets/kat6.png" alt="" height="50" width="50"/>
+          <ion-label style="padding-top: 10px;"><p>Menu Hemat</p></ion-label>
+        </div>
+      </div>
+    </ion-item>
+  </ion-list>
+
+  <ion-item-divider sticky>
+    <ion-label>PKL Di Sekitarmu</ion-label>
+  </ion-item-divider>
+
+  <ion-list>
+    <ion-item>
+      <div class="foto">
+        <img src="/assets/makanan1.png" alt="" />
+      </div>
+      <ion-label>
+        <h3>Bakso Kuah Bang Tarjo</h3>
+        <p>Bakso keliling bang tarjo serba murah</p>
+        <h5>800 m</h5>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <div class="foto">
+        <img src="/assets/makanan2.png" alt="" />
+      </div>
+      <ion-label>
+        <h2>Bakso Kuah Bang Tarjo</h2>
+        <p>Bakso keliling bang tarjo serba murah</p>
+        <h5>800 m</h5>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <div class="foto">
+        <img src="/assets/makanan3.png" alt="" />
+      </div>
+      <ion-label>
+        <h2>Bakso Kuah Bang Tarjo</h2>
+        <p>Bakso keliling bang tarjo serba murah</p>
+        <h5>800 m</h5>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <div class="foto">
+        <img src="/assets/makanan4.png" alt="" />
+      </div>
+      <ion-label>
+        <h3>Bakso Kuah Bang Tarjo</h3>
+        <p>Bakso keliling bang tarjo serba murah</p>
+        <h5>800 m</h5>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <div class="foto">
+        <img src="/assets/makanan5.png" alt="" />
+        <h5>800 m</h5>
+      </div>
+      <ion-label>
+        <h2>Bakso Kuah Bang Tarjo</h2>
+        <p>Bakso keliling bang tarjo serba murah</p>
+        <h5>800 m</h5>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <div class="foto">
+        <img src="/assets/makanan6.png" alt="" />
+      </div>
+      <ion-label>
+        <h2>Bakso Kuah Bang Tarjo</h2>
+        <p>Bakso keliling bang tarjo serba murah</p>
+        <h5>800 m</h5>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

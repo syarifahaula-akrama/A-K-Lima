@@ -1,9 +1,38 @@
 <ion-content>
    
   <ion-searchbar (ionInput)="getItems($event)"> </ion-searchbar>
-    <div style="text-align: center;">
-      <img src="/assets/beranda.jpeg" alt="" style="width: 100%; position: relative; padding-top: 10px;"/>
-  </div>
+    <ion-slides pager>
+
+    <ion-slide>
+      <ion-card color="light">
+        <img src="/assets/beranda.jpeg" alt="" style="background: rgb(255, 196, 0);"/>
+        <ion-card-content>Promo Seru Akhir Tahun!!!</ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card color="light">
+        <img src="/assets/k3.bmp" alt="" style="background: rgb(255, 196, 0);"/>
+        <ion-card-content>Bakso Bakar dengan Hati</ion-card-content>
+      </ion-card>
+    </ion-slide>
+    
+    <ion-slide>
+      <ion-card color="light">
+        <img src="/assets/k5.jpg" alt="" style="background: rgb(255, 196, 0);"/>
+        <ion-card-content>Kebab Cinta Segitiga</ion-card-content>
+      </ion-card>
+    </ion-slide>
+  
+    <ion-slide>
+      <ion-card color="light">
+        <img src="/assets/k1.gif" alt="" style="background: rgb(255, 196, 0);"/>
+        <ion-card-content>Burger Asik Sendiri</ion-card-content>
+      </ion-card>
+    </ion-slide>
+    
+  </ion-slides>
+  
   
   <ion-card color="light">
     <ion-card-content>
@@ -73,31 +102,6 @@
     <ion-label>K-LIMA Hot Products</ion-label>
   </ion-item-divider>
 
-  <ion-slides pager>
-
-    <ion-slide>
-      <ion-card color="light">
-        <img src="/assets/k3.bmp" alt="" style="background: rgb(255, 196, 0);"/>
-        <ion-card-content>Bakso Bakar dengan Hati</ion-card-content>
-      </ion-card>
-    </ion-slide>
-    
-    <ion-slide>
-      <ion-card color="light">
-        <img src="/assets/k2.jpg" alt="" style="background: rgb(255, 196, 0);"/>
-        <ion-card-content>Kebab Cinta Segitiga</ion-card-content>
-      </ion-card>
-    </ion-slide>
-  
-    <ion-slide>
-      <ion-card color="light">
-        <img src="/assets/k1.gif" alt="" style="background: rgb(255, 196, 0);"/>
-        <ion-card-content>Burger Asik Sendiri</ion-card-content>
-      </ion-card>
-    </ion-slide>
-    
-  </ion-slides>
-
   
   <ion-list>
     <h6 style="padding-left: 15px;">Jajanan Terhits ini dekat dengan daerahmu !!</h6>
@@ -161,6 +165,11 @@
         <p>Burger Mini the pooh</p>
       </ion-label>
     </ion-item>
+	
+	   <div style="text-align: center;">
+      <img src="/assets/beranda.jpeg" alt="" style="width: 100%; position: relative; padding-top: 10px;"/>
+  </div>
+  
   </ion-list>
 
 </ion-content>

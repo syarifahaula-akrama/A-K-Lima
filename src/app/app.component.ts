@@ -17,15 +17,15 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'Notifikasi',
+      url: '/notifikasi',
+      icon: 'notifications-outline'
     }
 	,
     {
       title: 'Logout',
       url: '/login',
-      icon: 'arrow-round-back'
+      icon: 'log-out'
     }
   ];
 

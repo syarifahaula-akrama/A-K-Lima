@@ -8,25 +8,29 @@
   <ion-list>
   <div style="text-align: center"><ion-label style="color: maroon">DAFTAR</ion-label></div>
   <ion-item>
-  <ion-input type="text" placeholder="Nama"></ion-input>
+  <ion-input type="text" [(ngModel)]="full_name" placeholder="Nama"></ion-input>
     </ion-item> 
 	
 	<ion-item>
-	<ion-input type="text" placeholder="Email"></ion-input>
+	<ion-input type="text" [(ngModel)]="username" placeholder="Email"></ion-input>
+	</ion-item>
+	
+	<ion-item>
+	<ion-input type="text" [(ngModel)]="phone_number" placeholder="No HP"></ion-input>
 	</ion-item>
 
 	<ion-item>
-	<ion-input type="password" placeholder="Password"></ion-input>
+	<ion-input type="password" [(ngModel)]="password" placeholder="Password"></ion-input>
 	</ion-item>
 
 	<ion-item>
-	<ion-input type="password" placeholder="Konfirmasi Password"></ion-input>
+	<ion-input type="password" [(ngModel)]="confirm_password" placeholder="Konfirmasi Password"></ion-input>
 	</ion-item>
 
 </ion-list>
 
 <div style="text-align: center">
-<ion-button color= "danger">DAFTAR</ion-button>
+<ion-button color= "danger" (click)="daftar()" >DAFTAR</ion-button>
 
 <ion-buttons>
      <ion-button color="danger">

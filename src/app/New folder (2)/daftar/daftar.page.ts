@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
-import { PostProvider } from '../../providers/post-provider';
+import { PostProvider } from '../../.././providers/post-provider';
 import { async } from 'q';
 
 @Component({
@@ -20,7 +20,7 @@ export class DaftarPage implements OnInit {
   constructor(
     private router: Router,
     public toastController: ToastController,
-    private postPvdr: PostProvider
+    private postPvdr: PostProvider,
   ) { }
 
   ngOnInit() {
@@ -30,7 +30,7 @@ export class DaftarPage implements OnInit {
     this.router.navigate(['/login']);
   }
 
-  async daftar() {
+  async addRegister() {
     if (this.full_name == '') {
       const toast = await this.toastController.create({
       message: 'Nama lengkap tidak boleh kosong',

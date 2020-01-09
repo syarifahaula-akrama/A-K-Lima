@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar color="danger" style="text-align: center;">
+    <ion-buttons style="float: inline-start;">
+      <ion-button>
+        <ion-icon name="arrow-back" style="padding-left: 10px; font-size: 120%;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar color="danger">
+    <ion-searchbar (ionInput)="getItems($event)"   placeholder="Burger"></ion-searchbar>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+<ion-list>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/fotoburgerabi.jpg" >
+      </ion-thumbnail>
+      <ion-label style="padding-left: 10px;">
+        <h2>Abi Burger</h2>
+        <p>Buka </p>
+        </ion-label>
+      <ion-button (click)="burger2()" clear item-end>View</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/fotoburgerbudi.jpg" >
+      </ion-thumbnail>
+      <ion-label style="padding-left: 10px;">
+        <h2>Budi Burger</h2>
+        <p>Buka </p>
+        </ion-label>
+      <ion-button (click)="burger3()" clear item-end>View</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/fotoburgerdani.jpg" >
+      </ion-thumbnail>
+      <ion-label style="padding-left: 10px;">
+        <h2>Dani Burger</h2>
+        <p>Tutup </p>
+        </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/fotoburgeredi.jpg" >
+      </ion-thumbnail>
+      <ion-label style="padding-left: 10px;">
+        <h2>Edi Burger</h2>
+        <p>Buka </p>
+        </ion-label>
+      <ion-button (click)="burger1()" clear item-end>View</ion-button>
+    </ion-item>
+  </ion-list>
+
+          
+</ion-content>

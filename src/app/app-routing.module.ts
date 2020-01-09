@@ -46,7 +46,55 @@ const routes: Routes = [
   {
     path: 'makanan',
     loadChildren: () => import('./page/makanan/makanan.module').then( m => m.MakananPageModule)
+  },  {
+    path: 'burgerbudi',
+    loadChildren: () => import('./burgerbudi/burgerbudi.module').then( m => m.BurgerbudiPageModule)
+  },
+  {
+    path: 'burgerabi',
+    loadChildren: () => import('./burgerabi/burgerabi.module').then( m => m.BurgerabiPageModule)
+  },
+  {
+    path: 'burgerdani',
+    loadChildren: () => import('./burgerdani/burgerdani.module').then( m => m.BurgerdaniPageModule)
+  },
+  {
+    path: 'burgeredi',
+    loadChildren: () => import('./burgeredi/burgeredi.module').then( m => m.BurgerediPageModule)
+  },
+  {
+    path: 'penjual',
+    loadChildren: () => import('./penjual/penjual.module').then( m => m.PenjualPageModule)
+  },
+  {
+    path: 'mieburger',
+    loadChildren: () => import('./mieburger/mieburger.module').then( m => m.MieburgerPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'burgermini',
+    loadChildren: () => import('./burgermini/burgermini.module').then( m => m.BurgerminiPageModule)
+  },
+  {
+    path: 'burgerpancong',
+    loadChildren: () => import('./burgerpancong/burgerpancong.module').then( m => m.BurgerpancongPageModule)
+  },
+  {
+    path: 'burgerkampoeng',
+    loadChildren: () => import('./burgerkampoeng/burgerkampoeng.module').then( m => m.BurgerkampoengPageModule)
+  },
+  {
+    path: 'burgermadu',
+    loadChildren: () => import('./burgermadu/burgermadu.module').then( m => m.BurgermaduPageModule)
+  },
+  {
+    path: 'burgerkentang',
+    loadChildren: () => import('./burgerkentang/burgerkentang.module').then( m => m.BurgerkentangPageModule)
   }
+
 
 ];
 

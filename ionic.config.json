@@ -1,5 +1,7 @@
 {
   "name": "k-lima",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

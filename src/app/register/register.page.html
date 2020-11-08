@@ -1,0 +1,38 @@
+
+<ion-content color="light" padding>
+  <div style="text-align: center; padding-top: 40px; padding-bottom: 10px;">
+<img src="/assets/LOGO.png" alt="" height="190" width="180"/>
+  </div>
+    <ion-item style="padding-bottom: 20px;">
+      <ion-label position="floating">Nama Akun</ion-label>
+      <ion-input [(ngModel)]="full_name" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> No HP </ion-label>
+      <ion-input type="text" [(ngModel)]="phone_number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Username </ion-label>
+      <ion-input type="text" [(ngModel)]="username"></ion-input>
+    </ion-item>
+    <ion-item style="padding-bottom: 20px;">
+      <ion-label position="floating">Kata Sandi</ion-label>
+      <ion-input [(ngModel)]="password" type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Konfirmasi Password </ion-label>
+      <ion-input type="password" [(ngModel)]="confirm_password"></ion-input>
+    </ion-item>
+
+    <div style="text-align: center">   
+    
+    <ion-col>
+    <ion-button expand="block" (click)="addRegister()" color="danger" fill="outline">
+      <ion-label>DAFTAR AKUN</ion-label>
+      <ion-icon name="arrow-round-forward" style="padding-left: 10px;"></ion-icon>
+    </ion-button>
+  </ion-col>
+    
+</div>
+  
+</ion-content>

@@ -1,9 +1,35 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>daftar</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content>
+<ion-content color="light" padding>
+  <div style="text-align: center; padding-top: 40px; padding-bottom: 10px;">
+<img src="/assets/LOGO.png" alt="" height="190" width="180"/>
+  </div>
+    <ion-item style="padding-bottom: 20px;">
+      <ion-label position="floating">Nama Akun</ion-label>
+      <ion-input [(ngModel)]="username" type="text"></ion-input>
+    </ion-item>
+    <ion-item style="padding-bottom: 20px;">
+      <ion-label position="floating">Kata Sandi</ion-label>
+      <ion-input [(ngModel)]="password" type="password"></ion-input>
+    </ion-item>
 
+
+<ion-button (click)="proseslogin()" custom-color="danger" expand="full">
+          <ion-label>MASUK sebagai PEDAGANG</ion-label>
+        </ion-button>
+        <ion-button (click)="beranda()" color="danger" outline expand="full">
+          <ion-label>MASUK sebagai PEMBELI</ion-label>
+        </ion-button>
+    <div style="text-align: center">
+    <ion-label style="text-align: center"> Atau<br> </ion-label>
+   
+    
+    <ion-col>
+    <ion-button expand="block" color="danger" fill="outline">
+      <ion-label>DAFTAR AKUN</ion-label>
+      <ion-icon name="arrow-round-forward" style="padding-left: 10px;"></ion-icon>
+    </ion-button>
+  </ion-col>
+    
+</div>
+  
 </ion-content>

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="danger" style="text-align: center;">
+    <ion-buttons style="float: inline-start;">
+      <ion-button (click)="kembali()">
+        <ion-icon name="arrow-back" style="padding-left: 10px; font-size: 120%;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  
+  <ion-list>
+    <ion-item>
+      <div>
+        <img src="assets/burgerenak.jpg" height="200">
+        <ion-label style="padding-left: 10px;">
+          <h2 style="font-size: 150%;">Burger Madu</h2>
+          <p style="font-size: 100%;">Rp. 36000</p>
+          </ion-label>
+      </div>
+      
+      <ion-button clear item-end style="padding-left: 10px; font-size: 150%;" (click)="presentAlert()"  >PESAN</ion-button>
+    </ion-item>
+
+
+    <ion-item>
+    <ion-avatar item-start>
+      <img src="assets/fotoburgerabi.jpg">
+    </ion-avatar>
+    <ion-label style="padding-left: 10px;">
+      <h2>Abi Burger</h2>
+      </ion-label>
+     <footer>Online</footer>
+  </ion-item>
+
+  
+  </ion-list>
+
+</ion-header>
+
+<ion-content>
+
+</ion-content>

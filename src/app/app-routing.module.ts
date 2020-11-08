@@ -93,6 +93,10 @@ const routes: Routes = [
   {
     path: 'burgerkentang',
     loadChildren: () => import('./burgerkentang/burgerkentang.module').then( m => m.BurgerkentangPageModule)
+  },
+  {
+    path: 'followerabi',
+    loadChildren: () => import('./followerabi/followerabi.module').then( m => m.FollowerabiPageModule)
   }
 
 

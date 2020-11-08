@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController  } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-burgerkampoeng',
@@ -9,13 +10,19 @@ import { AlertController  } from '@ionic/angular';
 export class BurgerkampoengPage implements OnInit {
 
   constructor(
-    public alertCtrl: AlertController
+    public alertCtrl: AlertController,
+    private router: Router
+
 
   ) { }
 
   ngOnInit() {
   }
 
+  kembali() {
+    this.router.navigate(['/burgerabi']);
+  }
+  
   async presentAlert() {
     const alert = await this.alertCtrl.create({
       header: 'Terimakasih telah order',

@@ -2,21 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-burgerabi',
-  templateUrl: './burgerabi.page.html',
-  styleUrls: ['./burgerabi.page.scss'],
+  selector: 'app-followerabi',
+  templateUrl: './followerabi.page.html',
+  styleUrls: ['./followerabi.page.scss'],
 })
-export class BurgerabiPage implements OnInit {
+export class FollowerabiPage implements OnInit {
 
   constructor(
     private router: Router
   ) { }
 
   ngOnInit() {
-  }
-
-  diklik() {
-    this.router.navigate(['/followerabi']);
   }
 
   burger1() {
@@ -42,9 +38,10 @@ export class BurgerabiPage implements OnInit {
   burger6() {
     this.router.navigate(['/burgerkentang']);
   }
-
+  
   kembali() {
     this.router.navigate(['/penjual']);
   }
+
 
 }
